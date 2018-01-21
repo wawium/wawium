@@ -19,5 +19,5 @@ before_install:
   - source /home/travis/.nix-profile/etc/profile.d/nix.sh
   - nix-env -iA nixpkgs.capnproto nixpkgs.kcov
 script:
-  - cargo install --debug cargo-make
+  - which cargo-make || cargo install --debug cargo-make
   - cargo make workspace-ci-flow
