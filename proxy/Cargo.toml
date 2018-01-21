@@ -1,0 +1,13 @@
+[package]
+name = "wawium-proxy"
+version = "0.1.0"
+authors = ["Stefan Junker <mail@stefanjunker.de>"]
+build = "build.rs"
+
+[build-dependencies]
+capnpc = "0.8"
+
+[dependencies]
+capnp = "0.8"
+capnp-rpc = "0.8"
+futures = "*"
