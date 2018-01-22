@@ -1,0 +1,3 @@
+[env]
+RUSTFLAGS = "-C link-dead-code"
+CARGO_MAKE_RUN_CODECOV = "true"
