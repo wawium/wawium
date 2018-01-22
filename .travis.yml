@@ -18,6 +18,6 @@ before_install:
   - source /home/travis/.nix-profile/etc/profile.d/nix.sh
   - nix-env -iA nixpkgs.capnproto nixpkgs.kcov
 install:
-  - cargo install --force --git https://github.com/sagiegurari/cargo-make.git --rev 0ef40a8640e838b9197f3b4527575296b524380d
+  - cargo install --force cargo-make
 script:
   - cargo make workspace-ci-flow --no-workspace
