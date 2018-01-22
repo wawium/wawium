@@ -5,7 +5,10 @@ rust:
   - stable
 os:
   - linux
-cache: cargo
+cache:
+  - directories:
+    - $HOME/.cargo
+    - /nix
 before_install:
   - curl -sSf https://nixos.org/nix/install | bash
   - mkdir -p ${HOME}/.nixpkgs
