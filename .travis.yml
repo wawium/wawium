@@ -22,4 +22,4 @@ before_install:
   - nix-env -iA nixpkgs.capnproto nixpkgs.kcov
 script:
   - which cargo-make || cargo install --debug cargo-make
-  - cargo make workspace-ci-flow
+  - cargo make workspace-ci-flow --no-workspace
