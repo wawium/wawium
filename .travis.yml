@@ -9,11 +9,6 @@ cache:
   - cargo
   - directories:
     - /nix
-env:
-  global:
-    - RUST_BACKTRACE=1
-    - RUSTFLAGS="-C link-dead-code"
-    - CARGO_MAKE_RUN_CODECOV=true
 before_install:
   - curl -sSf https://nixos.org/nix/install | bash
   - mkdir -p ${HOME}/.nixpkgs
